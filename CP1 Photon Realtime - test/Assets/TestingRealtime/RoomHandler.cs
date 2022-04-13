@@ -109,12 +109,9 @@ namespace RB.TestingRealtime
 
                 byte eventType = System.Convert.ToByte(EventCodeType.ROUND_TRIP);
 
-                SendOptions sendOptions = new SendOptions();
-                sendOptions.DeliveryMode = DeliveryMode.Unreliable;
-
                 ExitGames.Client.Photon.Hashtable h = _GetTripHashTable(tripInfo);
 
-                _loadBalancingClient.OpRaiseEvent(eventType, h, RaiseEventOptions.Default, sendOptions);
+                _loadBalancingClient.OpRaiseEvent(eventType, h, RaiseEventOptions.Default, SendOptions.SendUnreliable);
             }
         }
 
