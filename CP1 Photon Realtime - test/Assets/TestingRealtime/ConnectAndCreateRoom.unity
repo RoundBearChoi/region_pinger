@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2519487833907836232, guid: dfb2340b582ea2d4b84a3893b70a583c, type: 3}
+      propertyPath: _region
+      value: jp
+      objectReference: {fileID: 0}
     - target: {fileID: 2519487833907836233, guid: dfb2340b582ea2d4b84a3893b70a583c, type: 3}
       propertyPath: m_Name
       value: GameStarter
